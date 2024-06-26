@@ -19,7 +19,7 @@ pipeline {
             matrix {
                 agent {
                     dockerfile {
-                        filename ".ci/Dockerfile.${env.DISTRO}"
+                        filename ".ci/Dockerfile.noetic"
                         dir 'src/franka_ros'
                     }
                 }
